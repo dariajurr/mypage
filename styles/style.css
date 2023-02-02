@@ -138,6 +138,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -154,15 +158,30 @@ a:hover {
   position: relative;
   z-index: 10;
 }
+.header__logo {
+  width: 150px;
+}
+@media (min-width: 40em) {
+  .header__logo {
+    width: 300px;
+  }
+}
 .header__nav {
   position: relative;
   background-color: hsl(0deg, 0%, 100%);
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  width: calc(100% - 3rem);
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 5px 15px 10px;
   border-radius: 0 0 5px 5px;
+}
+@media (min-width: 40em) {
+  .header__nav {
+    padding: 15px 40px;
+  }
 }
 .header__popup {
   position: absolute;
@@ -201,8 +220,7 @@ a:hover {
   -webkit-tap-highlight-color: transparent;
 }
 .header__menu svg {
-  width: 64px;
-  height: 48px;
+  width: 40px;
   top: -6px;
   left: -14px;
   stroke: var(--color);
@@ -211,6 +229,11 @@ a:hover {
   stroke-linejoin: round;
   fill: none;
   display: block;
+}
+@media (min-width: 40em) {
+  .header__menu svg {
+    width: 64px;
+  }
 }
 .header__menu svg path {
   transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);

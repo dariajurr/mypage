@@ -1,16 +1,30 @@
 .header {
     position: relative;
     z-index: 10;
+
+    &__logo {
+        width: 150px;
+
+        @include breakpoints-up(medium) {
+            width: 300px;
+        }
+    }
     
     &__nav {
         position: relative;
         background-color: $white;
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        width: calc(100% - 3rem);
         max-width: 1280px;
         margin: 0 auto;
-        padding: 20px 40px;
+        padding: 5px 15px 10px;
         border-radius: 0 0 5px 5px;
+
+        @include breakpoints-up(medium) {
+            padding: 15px 40px;
+        }
     }
 
     &__popup {
@@ -52,8 +66,8 @@
         -webkit-appearence: none;
         -webkit-tap-highlight-color: transparent;
         svg {
-            width: 64px;
-            height: 48px;
+            width: 40px;
+
             top: -6px;
             left: -14px;
             stroke: var(--color);
@@ -62,6 +76,12 @@
             stroke-linejoin: round;
             fill: none;
             display: block;
+
+            @include breakpoints-up(medium) {
+                width: 64px;
+
+            }
+            
             path {
                 transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s),
                     stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
