@@ -1,7 +1,6 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-
 }
 
 *,
@@ -36,21 +35,9 @@ h1, h2, h3 {
     padding: 0;
 }
 
-h2 {
-    font-size: 1.875rem;
-    color: $darkBlue;
-    margin-bottom: 1.5625rem;
-
-    @include breakpoints-up(large) {
-        font-size: 2.25rem;
-        margin-bottom: 2.25rem;
-    }
-}
-
 p {
     line-height: 1.5;
     margin-top: 0;
-    margin-bottom: 2.25rem;
 }
 
 a,
