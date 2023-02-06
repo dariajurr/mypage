@@ -1,12 +1,14 @@
 $darkBlue: hsl(233, 26%, 24%);
-$grayishBlue: hsl(233, 8%, 62%);
+$grayishBlue:/* hsl(233, 8%, 62%);*/ #111;
 $lightGrayishBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
-$white: hsl(0, 0%, 100%);
+$white: #fff;
+$pink: #ff7599;
+$purple: #9466ea;
 
 
 //Font Sizes
 $font-sm: 0.875rem; //14px
 $font-med: 1.125rem; //18px
 $font-lg: 1.25rem;
-$font-xlg: 3.25rem;
+$font-xlg: 7.5rem;
