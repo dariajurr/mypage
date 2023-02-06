@@ -72,7 +72,11 @@
 
     &__img {
         border-radius: 20px;
-        max-width: 650px;
+        max-width: 500px;
         width: 100%;
+
+        @include breakpoints-up(xlarge){
+            max-width: 650px;
+        }
     }
 }

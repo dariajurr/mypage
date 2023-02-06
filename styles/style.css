@@ -313,6 +313,71 @@ a:hover {
 }
 .about__img {
   border-radius: 20px;
-  max-width: 650px;
+  max-width: 500px;
   width: 100%;
+}
+@media (min-width: 87.5em) {
+  .about__img {
+    max-width: 650px;
+  }
+}
+
+.experience {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 25px;
+}
+.experience__title {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+.experience__subtitle {
+  font-size: 1.125rem;
+  padding-bottom: 20px;
+  border-bottom: solid 3px #9466ea;
+}
+.experience__item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+@media (min-width: 64em) {
+  .experience__item {
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+}
+.experience__item-job {
+  width: 260px;
+}
+.experience__item-info {
+  width: 100%;
+  padding-left: 15px;
+}
+.experience__item-title {
+  color: #555c66;
+  margin: 16px 0;
+}
+.experience__item-date {
+  font-size: 0.875rem;
+}
+.experience__item-name {
+  font-size: 1.125rem;
+  color: #9466ea;
+  font-weight: 600;
+}
+.experience__item-description {
+  font-size: 1.125rem;
+}
+.experience__description-list li {
+  color: #9466ea;
+}
+.experience__description-list span {
+  color: #111;
+}
+.experience__item-link {
+  color: #ff7599;
+  font-size: 1.125rem;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

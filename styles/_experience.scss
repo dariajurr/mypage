@@ -1,0 +1,70 @@
+.experience {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 25px;
+
+    &__title {
+        font-size: $font-lg;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: $font-med;
+        padding-bottom: 20px;
+        border-bottom: solid 3px $purple;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 30px;
+
+        @include breakpoints-up(large){
+            flex-direction: row;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__item-job {
+        width: 260px;
+    }
+
+    &__item-info {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    &__item-title {
+        color: $lightGray;
+        margin: 16px 0;
+    }
+
+    &__item-date {
+        font-size: $font-sm;
+    }
+
+    &__item-name {
+        font-size: $font-med;
+        color: $purple;
+        font-weight: 600;
+    }
+
+    &__item-description {
+        font-size: $font-med;
+    }
+
+    &__description-list li {
+        color: $purple;
+    }
+
+    &__description-list span {
+        color: $black;
+    }
+
+    &__item-link {
+        color: $pink;
+        font-size: $font-med;
+        font-weight: 500;
+    }
+}
