@@ -14,18 +14,23 @@
         margin: auto;
         height: 100%;
         width: 60%;
+        max-width: 400px;
         background-color: $pink;
-        border-radius: 20px
+        border-radius: 20px;
+
+        @include breakpoints-up(xlarge){
+            max-width: 400px;
+        }
     }
 
     &__items {
         position: relative;
-        
         display: grid;
         grid-template-columns: repeat(1, auto);
         grid-gap: 16px;
         list-style: none;
-        margin: 0;
+        max-width: 553px;
+        margin: 0 auto;
         padding: 0;
 
         @include breakpoints-up(medium){
@@ -33,6 +38,7 @@
         }
 
         @include breakpoints-up(xlarge){
+            max-width: 885px;
             grid-template-columns: repeat(3, auto);
         }
     }
@@ -42,7 +48,34 @@
     }
 
     &__img {
-        width: 90%;
-        max-width: 320px;
+        max-width: 280px;
+        border-radius: 10px;
+        filter: brightness(.7);
+        transition-duration: .3s;
+    }
+
+    &__img:hover {
+        filter: brightness(1);
+    }
+
+    &__info {
+        position: relative;
+        
+        min-width: 280px;
+        max-width: 470px;
+        border-radius: 20px;
+        margin-top: 16px;
+        padding: 15px;
+        background-color: $white;
+
+        @include breakpoints-up(medium){
+            position: absolute;
+            top: 70%;
+            right: 20px;
+        }
+
+        @include breakpoints-up(xlarge){
+            right: 0;
+        }
     }
 }
