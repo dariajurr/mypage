@@ -73,6 +73,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -195,7 +196,7 @@ a:hover {
   padding: 0;
 }
 .header__popup-link {
-  display: block;
+  display: inline-block;
   padding: 0.625rem;
   color: hsl(233deg, 26%, 24%);
   text-align: center;
