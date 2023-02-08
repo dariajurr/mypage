@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 60px;
+    background-color: $grey;
+    padding: 30px;
+    
+    &__nav, &__socials {
+        list-style: none;
+    }
+
+    &__nav {
+        margin: 0;
+        padding-left: 0;
+        font-size: $font-sm;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__nav-item {
+        margin-bottom: 10px;
+    }
+
+    &__nav-link {
+        color: $white;
+    }
+
+    &__socials {
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100px;
+        margin: 0 auto;
+
+    }
+
+    &__icon {
+        max-width: 30px;
+    }
+}
